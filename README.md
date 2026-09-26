@@ -1,7 +1,5 @@
 # TEMRAL Public Proof
 
-[![Verify public evidence](https://github.com/justinlowther808/Temral.org-Proof/actions/workflows/verify.yml/badge.svg)](https://github.com/justinlowther808/Temral.org-Proof/actions/workflows/verify.yml)
-
 This repository is the public, zero-history evidence mirror for TEMRAL's bounded verification results.
 
 **Canonical proof:** https://temral.org/proof
