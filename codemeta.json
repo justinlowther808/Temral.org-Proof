@@ -1,0 +1,16 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "@type": "SoftwareSourceCode",
+  "name": "TEMRAL Public Proof",
+  "version": "1.0.0",
+  "datePublished": "2026-09-26",
+  "codeRepository": "https://github.com/justinlowther808/Temral.org-Proof",
+  "url": "https://temral.org/proof",
+  "programmingLanguage": "Python",
+  "description": "Public evidence and offline verification tooling for bounded TEMRAL verification results.",
+  "author": {
+    "@type": "Person",
+    "givenName": "Justin",
+    "familyName": "Lowther"
+  }
+}

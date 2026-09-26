@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use or discuss this public verification artifact, please cite this repository and the versioned release."
+title: "TEMRAL Public Proof"
+type: software
+authors:
+  - family-names: "Lowther"
+    given-names: "Justin"
+version: "1.0.0"
+date-released: 2026-09-26
+url: "https://temral.org/proof"
+repository-code: "https://github.com/justinlowther808/Temral.org-Proof"
+abstract: "Public evidence, offline verification tooling, scope boundaries, and falsification materials for bounded TEMRAL provider-bound input-reduction results."

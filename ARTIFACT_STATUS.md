@@ -1,0 +1,11 @@
+# Artifact Status
+
+- ARTIFACT AVAILABLE: **yes**
+- PACKET INTEGRITY VERIFIABLE OFFLINE: **yes**
+- OFFLINE VERIFIER INCLUDED: **yes**
+- PROVIDER TELEMETRY RECONCILIATION PUBLISHED: **yes**
+- INDEPENDENTLY VERIFIED BY A THIRD PARTY: **not claimed**
+- EXTERNALLY REPRODUCED: **not claimed**
+- UNIVERSAL PERFORMANCE: **not claimed**
+
+These labels are deliberately conservative.

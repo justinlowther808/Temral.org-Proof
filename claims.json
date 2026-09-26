@@ -1,0 +1,75 @@
+{
+  "schema": "temral.public-claim-ledger.v1",
+  "canonical_proof_url": "https://temral.org/proof",
+  "claims": [
+    {
+      "claim_id": "C001",
+      "status": "active",
+      "public_text": "The flagship OpenAI GPT-5.6 Sol matched pair measured 365320 control input tokens and 2237 treatment input tokens, a 99.38766% provider-reported input-token reduction, with exact required-output preservation.",
+      "evidence_ids": ["E01", "E07", "E08"],
+      "workload_scope": "one bounded matched live provider experiment",
+      "model_scope": ["gpt-5.6-sol"],
+      "provider_scope": ["openai"],
+      "introduced_in_release": "v1.0.0"
+    },
+    {
+      "claim_id": "C002",
+      "status": "active",
+      "public_text": "OpenAI organization usage telemetry reconciled the flagship pair exact one-minute bucket at 2 requests, 367557 input tokens, 332 output tokens, and 0 cached input tokens.",
+      "evidence_ids": ["E02", "E08"],
+      "workload_scope": "flagship exact one-minute provider usage bucket",
+      "model_scope": ["gpt-5.6-sol"],
+      "provider_scope": ["openai"],
+      "introduced_in_release": "v1.0.0"
+    },
+    {
+      "claim_id": "C003",
+      "status": "active",
+      "public_text": "Six additional full matched pairs were green across OpenAI GPT-5.6 Terra and Anthropic Claude Sonnet 5, with exact required-output preservation across all six.",
+      "evidence_ids": ["E03", "E07", "E08"],
+      "workload_scope": "six bounded retrieval matched pairs",
+      "model_scope": ["gpt-5.6-terra", "claude-sonnet-5"],
+      "provider_scope": ["openai", "anthropic"],
+      "introduced_in_release": "v1.0.0"
+    },
+    {
+      "claim_id": "C004",
+      "status": "active",
+      "public_text": "The minimum token reduction across the six published Terra/Sonnet replication pairs was 99.33%, and the minimum request-body reduction was 99.30%.",
+      "evidence_ids": ["E03", "E07", "E08"],
+      "workload_scope": "six bounded retrieval matched pairs",
+      "model_scope": ["gpt-5.6-terra", "claude-sonnet-5"],
+      "provider_scope": ["openai", "anthropic"],
+      "introduced_in_release": "v1.0.0"
+    },
+    {
+      "claim_id": "C005",
+      "status": "active",
+      "public_text": "The current public set contains seven matched TEMRAL proof pairs across three models and two providers: one flagship Sol anchor plus six Terra/Sonnet replications.",
+      "evidence_ids": ["E01", "E03", "E07", "E08"],
+      "workload_scope": "published bounded evidence set",
+      "model_scope": ["gpt-5.6-sol", "gpt-5.6-terra", "claude-sonnet-5"],
+      "provider_scope": ["openai", "anthropic"],
+      "introduced_in_release": "v1.0.0"
+    },
+    {
+      "claim_id": "C006",
+      "status": "active",
+      "public_text": "Universal performance is not claimed.",
+      "evidence_ids": ["E04", "E07", "E08"],
+      "workload_scope": "all public claims",
+      "model_scope": [],
+      "provider_scope": [],
+      "introduced_in_release": "v1.0.0"
+    }
+  ],
+  "evidence_index": {
+    "E01": "evidence/2026-09-24/01_LIVE_PAIR_REPORT.md",
+    "E02": "evidence/2026-09-24/02_PROVIDER_TELEMETRY_RECONCILIATION.md",
+    "E03": "evidence/2026-09-24/03_CROSS_PROVIDER_REPLICATION.md",
+    "E04": "evidence/2026-09-24/04_SCOPE_AND_LIMITS.md",
+    "E05": "evidence/2026-09-24/05_FALSIFICATION_PROTOCOL.md",
+    "E07": "evidence/2026-09-24/manifest.json",
+    "E08": "evidence/2026-09-24/public-proof-latest.json"
+  }
+}

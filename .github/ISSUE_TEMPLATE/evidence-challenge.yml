@@ -1,0 +1,33 @@
+name: Evidence challenge
+description: Challenge a specific published TEMRAL claim or artifact.
+title: "[Evidence challenge] "
+body:
+  - type: input
+    id: claim
+    attributes:
+      label: Claim ID or exact claim
+    validations:
+      required: true
+  - type: input
+    id: artifact
+    attributes:
+      label: Evidence artifact
+    validations:
+      required: true
+  - type: textarea
+    id: defect
+    attributes:
+      label: Alleged defect
+      description: Explain the specific falsifiable problem.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Why this could change the interpretation
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps or supporting material

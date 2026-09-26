@@ -1,0 +1,35 @@
+name: Replication report
+description: Report an independent or external replication attempt.
+title: "[Replication] "
+body:
+  - type: input
+    id: provider_model
+    attributes:
+      label: Provider and model
+    validations:
+      required: true
+  - type: textarea
+    id: protocol
+    attributes:
+      label: Frozen protocol and workload class
+    validations:
+      required: true
+  - type: textarea
+    id: baseline
+    attributes:
+      label: Baseline repeatability and cache state
+    validations:
+      required: true
+  - type: textarea
+    id: usage
+    attributes:
+      label: Provider-reported usage and output acceptance result
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Outcome
+      options: ["GREEN", "RED", "INCONCLUSIVE", "PROTOCOL DEVIATION"]
+    validations:
+      required: true
