@@ -1,1 +1,0 @@
-Reviewer-kit premerge verification is performed outside the public evidence corpus and is intentionally not retained as a repository artifact.
