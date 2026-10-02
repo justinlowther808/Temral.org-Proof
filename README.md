@@ -8,6 +8,8 @@ This repository is the public, zero-history evidence mirror for TEMRAL's bounded
 
 **Public verifier:** https://temral.org/verify
 
+**Media & technical review:** https://temral.org/media
+
 ## Published result
 
 TEMRAL currently publishes **seven green matched proof pairs across three models and two providers**:
