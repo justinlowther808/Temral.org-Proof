@@ -1,0 +1,26 @@
+name: Verify public proof
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-proof-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Offline evidence verifier
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Check out published evidence
+        uses: actions/checkout@v4
+      - name: Verify packet integrity and claim arithmetic
+        run: python3 verify.py
