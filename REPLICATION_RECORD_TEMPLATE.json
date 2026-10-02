@@ -1,0 +1,70 @@
+{
+  "schema": "temral.external_replication_record.v1",
+  "frozen_before_treatment": true,
+  "review": {
+    "reviewer": null,
+    "organization": null,
+    "started_at": null,
+    "timezone": null,
+    "publication_url": null
+  },
+  "frozen_protocol": {
+    "provider": null,
+    "model": null,
+    "workload_sha256": null,
+    "control_request_sha256": null,
+    "acceptance_contract": null,
+    "minimum_reduction_percent": null,
+    "cache_policy": null,
+    "retry_policy": null,
+    "maximum_provider_calls": null,
+    "maximum_provider_spend_usd": null,
+    "baseline_stability_rule": null,
+    "required_telemetry": [],
+    "disclosure_and_custody_plan": null
+  },
+  "control": {
+    "request_count": null,
+    "provider_input_tokens": null,
+    "provider_output_tokens": null,
+    "cached_input_tokens": null,
+    "request_identifiers": [],
+    "acceptance_passed": null,
+    "telemetry_evidence": []
+  },
+  "treatment": {
+    "request_count": null,
+    "provider_input_tokens": null,
+    "provider_output_tokens": null,
+    "cached_input_tokens": null,
+    "request_identifiers": [],
+    "acceptance_passed": null,
+    "telemetry_evidence": []
+  },
+  "reconciliation": {
+    "provider_account_telemetry_available": null,
+    "provider_account_telemetry_reconciled": null,
+    "observed_reduction_percent": null,
+    "calculation": null
+  },
+  "result": {
+    "classification": null,
+    "allowed_classifications": [
+      "GREEN",
+      "RED",
+      "INCONCLUSIVE",
+      "PROTOCOL_DEVIATION"
+    ],
+    "protocol_deviations": [],
+    "limitations": [],
+    "reviewer_notes": null
+  },
+  "privacy_boundary": {
+    "raw_credentials_published": false,
+    "account_passwords_published": false,
+    "private_prompts_required_for_publication": false,
+    "private_treatment_payloads_required_for_publication": false,
+    "internal_implementation_material_required_for_publication": false,
+    "use_cryptographic_commitments_when_raw_material_is_private": true
+  }
+}
