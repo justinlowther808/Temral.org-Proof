@@ -1,35 +1,108 @@
-name: Replication report
-description: Report an independent or external replication attempt.
+name: Independent replication report
+description: Publish an external TEMRAL replication attempt under the frozen reviewer protocol.
 title: "[Replication] "
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Start with https://github.com/justinlowther808/Temral.org-Proof/blob/main/REVIEWER_START_HERE.md
+
+        Publish GREEN, RED, INCONCLUSIVE, or PROTOCOL DEVIATION. Negative results do not require TEMRAL approval.
+
+        Never paste provider credentials, passwords, private prompts, private treatment payloads, route credentials, or internal implementation material into this issue.
   - type: input
     id: provider_model
     attributes:
-      label: Provider and model
+      label: Provider and exact model
+      placeholder: e.g. Provider / exact model identifier
+    validations:
+      required: true
+  - type: input
+    id: review_window
+    attributes:
+      label: Review date/time window and timezone
+    validations:
+      required: true
+  - type: input
+    id: workload_commitment
+    attributes:
+      label: Workload cryptographic commitment
+      description: Prefer SHA-256 or another stable commitment when the raw workload should remain private.
     validations:
       required: true
   - type: textarea
-    id: protocol
+    id: acceptance_contract
     attributes:
-      label: Frozen protocol and workload class
+      label: Frozen acceptance contract and reduction threshold
+      description: State what the output must satisfy and the minimum reduction required before treatment is seen.
+    validations:
+      required: true
+  - type: textarea
+    id: frozen_limits
+    attributes:
+      label: Frozen cache, retry, call, spend, and baseline-stability rules
+      description: Include cache policy, retry policy, maximum provider calls, maximum spend, and baseline stability rule.
     validations:
       required: true
   - type: textarea
     id: baseline
     attributes:
-      label: Baseline repeatability and cache state
+      label: Control/baseline result
+      description: Include provider-reported input/output tokens, cache usage, request count, request identifiers or commitments, and acceptance result.
     validations:
       required: true
   - type: textarea
-    id: usage
+    id: treatment
     attributes:
-      label: Provider-reported usage and output acceptance result
+      label: TEMRAL treatment result
+      description: Include the same provider-reported fields used for the control and the output-acceptance result.
+    validations:
+      required: true
+  - type: textarea
+    id: telemetry_reconciliation
+    attributes:
+      label: Provider/account telemetry reconciliation
+      description: State what account-level telemetry was available and whether it reconciled with the recorded requests.
+    validations:
+      required: true
+  - type: textarea
+    id: deviations
+    attributes:
+      label: Protocol deviations
+      description: Enter "None" if there were no material deviations. Otherwise list every frozen condition that changed.
     validations:
       required: true
   - type: dropdown
     id: result
     attributes:
-      label: Outcome
-      options: ["GREEN", "RED", "INCONCLUSIVE", "PROTOCOL DEVIATION"]
+      label: Final classification
+      options:
+        - GREEN
+        - RED
+        - INCONCLUSIVE
+        - PROTOCOL DEVIATION
     validations:
       required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence and public links
+      description: Add provider telemetry exports, screenshots, request-identifier commitments, or reviewer-held record references when appropriate.
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations or unresolved questions
+      description: Enter "None" if there are no known limitations.
+    validations:
+      required: true
+  - type: checkboxes
+    id: attestations
+    attributes:
+      label: Publication attestations
+      options:
+        - label: The acceptance and measurement rules were frozen before the treatment result was seen, or the result is classified PROTOCOL DEVIATION.
+          required: true
+        - label: I have not pasted credentials, passwords, private prompts, private treatment payloads, route credentials, or internal implementation material into this issue.
+          required: true
+        - label: I understand that negative results may be published without TEMRAL approval.
+          required: true
