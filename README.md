@@ -10,6 +10,8 @@ This repository is the public, zero-history evidence mirror for TEMRAL's bounded
 
 **Media & technical review:** https://temral.org/media
 
+**Independent reviewer start:** [REVIEWER_START_HERE.md](REVIEWER_START_HERE.md)
+
 ## Published result
 
 TEMRAL currently publishes **seven green matched proof pairs across three models and two providers**:
@@ -38,13 +40,15 @@ A green verifier result means the public evidence package is internally consiste
 
 ## Start here
 
-1. [CLAIMS.md](CLAIMS.md) — exactly what is claimed.
-2. [SCOPE_AND_LIMITS.md](SCOPE_AND_LIMITS.md) — exactly what is not claimed.
-3. [VERIFY.md](VERIFY.md) — verify the packet locally.
-4. [FALSIFICATION.md](FALSIFICATION.md) — how to try to prove a result wrong.
-5. [REPLICATION_PROTOCOL.md](REPLICATION_PROTOCOL.md) — protocol for an external test.
-6. [PROVENANCE.md](PROVENANCE.md) — public artifact custody.
-7. [CORRECTIONS.md](CORRECTIONS.md) — how corrections and withdrawals are handled.
+1. [REVIEWER_START_HERE.md](REVIEWER_START_HERE.md) — independent-review quickstart and result classes.
+2. [CLAIMS.md](CLAIMS.md) — exactly what is claimed.
+3. [SCOPE_AND_LIMITS.md](SCOPE_AND_LIMITS.md) — exactly what is not claimed.
+4. [VERIFY.md](VERIFY.md) — verify the packet locally.
+5. [FALSIFICATION.md](FALSIFICATION.md) — how to try to prove a result wrong.
+6. [REPLICATION_PROTOCOL.md](REPLICATION_PROTOCOL.md) — protocol for an external test.
+7. [REPLICATION_RECORD_TEMPLATE.json](REPLICATION_RECORD_TEMPLATE.json) — machine-readable freeze/result template.
+8. [PROVENANCE.md](PROVENANCE.md) — public artifact custody.
+9. [CORRECTIONS.md](CORRECTIONS.md) — how corrections and withdrawals are handled.
 
 The original public packet is preserved under [evidence/2026-09-24/](evidence/2026-09-24/) and as the downloadable archive under [releases/](releases/).
 
