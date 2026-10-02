@@ -90,6 +90,10 @@ A useful public result should state:
 
 Supporting screenshots, exported provider telemetry, request identifiers, signed statements, or reviewer-held raw records can be attached when appropriate.
 
+## Publish a replication report
+
+After the run, use the [structured replication report form](https://github.com/justinlowther808/Temral.org-Proof/issues/new?template=replication-report.yml) to publish `GREEN`, `RED`, `INCONCLUSIVE`, or `PROTOCOL_DEVIATION` directly in the public repository. Do not paste credentials or other private material into the issue.
+
 ## Existing public material
 
 - [`CLAIMS.md`](CLAIMS.md) — current bounded claims.
